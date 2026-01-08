@@ -4,69 +4,62 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>IMDb</title>
+        <link rel="stylesheet" href="./src/css/nav.css" />
+        <link rel="stylesheet" href="./src/css/index.css" />
     </head>
     <body>
-        <!-- navgation bar starts here -->
-        <center>
-            <br />
-            <table width="50%">
-                <tr>
-                    <th><a href="index.html">Home</a></th>
-                    <th><a href="./src/pages/topList.html">Top Picks</a></th>
-                    <th><a href="./src/pages/review.html">Review</a></th>
-                    <th><a href="./src/pages/rating.html">Rating</a></th>
-                    <th><a href="./src/pages/contact.html">Contact us</a></th>
-                </tr>
-            </table>
-            <br />
-            <hr />
-            <br />
-        </center>
         <!-- navgation bar ends here -->
-        <table>
-            <tr>
-                <th>
-                    <img
-                        src="assets/gotHome.jpg"
-                        alt="got image"
-                        height="500px"
-                    />
-                </th>
-                <th>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./src/pages/topList.html">Top Picks</a></li>
+                <li><a href="./src/pages/review.html">Review</a></li>
+                <li><a href="./src/pages/rating.html">Rating</a></li>
+                <li><a href="./src/pages/contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <!-- navgation bar ends here -->
+
+        <div class="main">
+            <!-- Row 1 -->
+            <div class="row">
+                <div class="image-box">
+                    <img src="assets/gotHome.jpg" alt="Game of Thrones" />
+                </div>
+
+                <div class="content-box">
                     <h1>Game of Thrones</h1>
                     <p>
                         Nine noble families fight for control over the lands of
                         Westeros, while an ancient enemy returns after being
                         dormant for millennia.
                     </p>
-                </th>
-            </tr>
-            <tr>
-                <th>
+                </div>
+            </div>
+
+            <!-- Row 2 (reverse layout) -->
+            <div class="row reverse">
+                <div class="content-box">
                     <h1>Mind Hunter</h1>
                     <p>
                         Two FBI agents broaden the realm of criminal science by
                         investigating the psychology behind murder and end up
                         getting too close to real-life monsters.
                     </p>
-                </th>
-                <th>
-                    <img
-                        src="assets/mindhunter.jpg"
-                        alt="mindhunter image"
-                        height="500px"
-                    />
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <img
-                        src="assets/bb.jpg"
-                        alt="breaking bad image"
-                        height="500px"
-                    />
-                </th>
-                <th>
+                </div>
+
+                <div class="image-box">
+                    <img src="assets/mindhunter.jpg" alt="Mind Hunter" />
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row">
+                <div class="image-box">
+                    <img src="assets/bb.jpg" alt="Breaking Bad" />
+                </div>
+
+                <div class="content-box">
                     <h1>Breaking Bad</h1>
                     <p>
                         A chemistry teacher diagnosed with inoperable lung
@@ -74,26 +67,23 @@
                         methamphetamine with a former student to secure his
                         family's future.
                     </p>
-                </th>
-            </tr>
-            <tr>
-                <th>
+                </div>
+            </div>
+
+            <!-- Row 4 (reverse layout) -->
+            <div class="row reverse">
+                <div class="content-box">
                     <h1>Stranger Things</h1>
                     <p>
                         In 1980s Indiana, a group of young friends witness
-                        supernatural forces and secret government exploits. As
-                        they search for answers, the children unravel a series
-                        of extraordinary mysteries.
+                        supernatural forces and secret government exploits.
                     </p>
-                </th>
-                <th>
-                    <img
-                        src="assets/st.jpg"
-                        alt="stranger things image"
-                        height="500px"
-                    />
-                </th>
-            </tr>
-        </table>
+                </div>
+
+                <div class="image-box">
+                    <img src="assets/st.jpg" alt="Stranger Things" />
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,72 @@
+/* Navigation and global link styles used by all pages */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #111;
+    background: #fff;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
+/* top navigation (homepage) */
+nav {
+    background: #f8f9fb;
+    padding: 12px 20px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #e8f0fe;
+}
+
+/* responsive body container helper */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* images responsive by default */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* small-screen tweaks */
+@media (max-width: 600px) {
+    nav ul {
+        gap: 8px;
+        padding-left: 6px;
+        padding-right: 6px;
+        overflow-x: auto;
+    }
+}

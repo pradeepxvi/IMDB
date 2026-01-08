@@ -1,0 +1,44 @@
+/* Homepage styles */
+.main {
+    padding: 24px 0 48px 0;
+}
+
+.row {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.row.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-box {
+    flex: 1 1 360px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.content-box {
+    flex: 1 1 360px;
+}
+
+.content-box h1 {
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row.reverse {
+        flex-direction: column;
+    }
+}

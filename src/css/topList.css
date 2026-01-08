@@ -1,0 +1,56 @@
+/* Top Picks page styles - semantic layout */
+.show-list {
+    margin: 18px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.show-item h2 {
+    margin: 6px 0 12px 0;
+    color: #1f2933;
+}
+
+.show-body {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: #fbfcfe;
+    border: 1px solid #eef2f6;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.media {
+    flex: 1 1 480px;
+}
+
+.media video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.cast {
+    flex: 0 0 260px;
+}
+
+.cast h3 {
+    margin-top: 0;
+}
+
+.cast ul {
+    margin: 8px 0 0 0;
+    padding-left: 18px;
+}
+
+@media (max-width: 900px) {
+    .show-body {
+        flex-direction: column;
+    }
+
+    .cast {
+        flex-basis: auto;
+    }
+}

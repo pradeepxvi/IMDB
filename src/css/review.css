@@ -1,0 +1,72 @@
+/* Review page - article-based layout */
+.page-header {
+    text-align: center;
+    margin: 18px 0 12px 0;
+}
+
+.reviews {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.review-item {
+    display: flex;
+    gap: 16px;
+    background: #fbfcfe;
+    border: 1px solid #eef2f6;
+    padding: 12px;
+    border-radius: 8px;
+    align-items: flex-start;
+}
+
+.review-item .thumb {
+    flex: 0 0 140px;
+    text-align: center;
+}
+
+.review-item .thumb img {
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto 8px auto;
+}
+
+.review-item .title {
+    margin: 0;
+    font-weight: 700;
+}
+
+.review-body {
+    flex: 1 1 auto;
+}
+
+.review-body h3 {
+    margin-top: 0;
+}
+
+.review-body a {
+    color: #1a73e8;
+}
+
+.review-body a:hover {
+    color: #0b5ed7;
+}
+
+@media (max-width: 800px) {
+    .review-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .review-item .thumb {
+        order: -1;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+}
