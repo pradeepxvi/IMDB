@@ -8,20 +8,24 @@
         <link rel="stylesheet" href="./src/css/index.css" />
     </head>
     <body>
-        <!-- navgation bar ends here -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./src/pages/topList.html">Top Picks</a></li>
-                <li><a href="./src/pages/review.html">Review</a></li>
-                <li><a href="./src/pages/rating.html">Rating</a></li>
-                <li><a href="./src/pages/contact.html">Contact us</a></li>
-            </ul>
-        </nav>
-        <!-- navgation bar ends here -->
+        <header>
+            <nav class="navbar">
+                <h1 class="logo">IMDb</h1>
+
+                <input type="checkbox" id="nav-toggle" />
+                <label for="nav-toggle" class="nav-toggle"> ☰ </label>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./src/pages/topList.html">Top Picks</a></li>
+                    <li><a href="./src/pages/review.html">Review</a></li>
+                    <li><a href="./src/pages/rating.html">Rating</a></li>
+                    <li><a href="./src/pages/contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <div class="main">
-            <!-- Row 1 -->
             <div class="row">
                 <div class="image-box">
                     <img src="assets/gotHome.jpg" alt="Game of Thrones" />
@@ -37,7 +41,6 @@
                 </div>
             </div>
 
-            <!-- Row 2 (reverse layout) -->
             <div class="row reverse">
                 <div class="content-box">
                     <h1>Mind Hunter</h1>
@@ -53,7 +56,6 @@
                 </div>
             </div>
 
-            <!-- Row 3 -->
             <div class="row">
                 <div class="image-box">
                     <img src="assets/bb.jpg" alt="Breaking Bad" />
@@ -70,7 +72,6 @@
                 </div>
             </div>
 
-            <!-- Row 4 (reverse layout) -->
             <div class="row reverse">
                 <div class="content-box">
                     <h1>Stranger Things</h1>

@@ -1,72 +1,81 @@
-/* Navigation and global link styles used by all pages */
-body {
-    font-family: Arial, Helvetica, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    color: #111;
-    background: #fff;
+    box-sizing: border-box;
 }
 
-a {
-    color: #1a73e8;
-    text-decoration: none;
+header {
+    background-color: #121212;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0%;
 }
 
-a:hover {
-    color: #0b5ed7;
-    text-decoration: underline;
-}
-
-/* top navigation (homepage) */
-nav {
-    background: #f8f9fb;
-    padding: 12px 20px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 14px 16px;
     display: flex;
-    gap: 16px;
     align-items: center;
+    justify-content: space-between;
 }
 
-nav ul li {
-    display: inline-block;
+.logo {
+    color: #f5c518;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-nav a {
-    padding: 8px 12px;
-    border-radius: 6px;
-    display: inline-block;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
 }
 
-nav a:hover {
-    background: #e8f0fe;
+.nav-links a {
+    text-decoration: none;
+    color: #e5e5e5;
+    font-size: 15px;
 }
 
-/* responsive body container helper */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+.nav-links a:hover {
+    color: #f5c518;
 }
 
-/* images responsive by default */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    color: #f5c518;
+    cursor: pointer;
 }
 
-/* small-screen tweaks */
-@media (max-width: 600px) {
-    nav ul {
-        gap: 8px;
-        padding-left: 6px;
-        padding-right: 6px;
-        overflow-x: auto;
+#nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #121212;
+        flex-direction: column;
+        display: none;
+        padding: 12px 0;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #nav-toggle:checked+.nav-toggle+.nav-links {
+        display: flex;
     }
 }
